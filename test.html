@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jon Burris</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #e1dfdb;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #0a473d;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .profile-img {
+      width: 60%;
+      max-width: 250px;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #0a473d;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #0a473d;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .buttons a {
+      display: inline-block;
+      width: 100%;
+      max-width: 300px;
+      padding: 14px 24px;
+      background-color: #0a473d;
+      color: #fefefe;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .buttons a:hover {
+      background-color: #0d856a;
+    }
+
+    /* Tablets and up */
+    @media (min-width: 600px) {
+      .buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .buttons a {
+        flex: 1 1 calc(50% - 20px);
+        margin: 5px;
+      }
+    }
+
+    /* Larger screens */
+    @media (min-width: 900px) {
+      h2 {
+        font-size: 3rem;
+      }
+
+      .profile-img {
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="unnamed.jpg" alt="Profile photo" class="profile-img" />
+    <h2><strong>My LinkTree</strong></h2>
+    <div class="buttons">
+      <a href="https://www.instagram.com/jonlburris/">Instagram</a>
+      <a href="https://www.linkedin.com/in/jonburris/">LinkedIn</a>
+      <a href="https://venmo.com/u/jonburris">Buy me a coffee</a>
+    </div>
+  </div>
+</body>
+</html>
